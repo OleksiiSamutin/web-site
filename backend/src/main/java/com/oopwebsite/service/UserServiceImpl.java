@@ -87,8 +87,10 @@ public class UserServiceImpl implements UserService{
                 roles.add(Role.valueOf(role));
             }
         }
+        if (roles.isEmpty()){
             roles.add(Role.ROLE_USER);
-            user.setRoles(roles);
+        }
+        user.setRoles(roles);
         user.setPassword(updateRequest.getPassword() == null? prev.getPassword(): passwordEncoder.encode(updateRequest.getPassword()));
         return user;
     }
