@@ -57,6 +57,7 @@ class RegisterPage extends React.Component {
         }
         axios.post(apiBaseUrl + 'auth/signup', payload)
             .then(function (response) {
+                    window.location.href = '/login'
                     console.log("Login successful");
                 }
             ).catch(req => (req))
