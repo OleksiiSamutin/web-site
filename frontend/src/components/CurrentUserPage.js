@@ -135,7 +135,7 @@ class CurrentUserPage extends React.Component {
                                 Пошта: {this.state.current.email}
                             </Typography>
                             <Typography variant="h6" component="h6">
-                                Пошта: {this.state.current.group}
+                                Группа: {this.state.current.group}
                             </Typography>
                             <Typography variant="h5" component="h6">
                                 Лабораторні роботи:
